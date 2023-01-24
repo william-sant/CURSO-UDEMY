@@ -1,0 +1,30 @@
+/*
+Modelo de caixa - Box Model
+*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.conteudo {
+	height: 200px;
+	width: 200px;
+	margin-right: 30px;
+	background: gray;
+	color: white;
+	float: right;
+	border: 3px solid black;
+}
+
+.conteudo4 {
+	height: 500px;
+	width: 150px;
+	margin: 30px;
+	background: lightseagreen;
+	color: white;
+	clear: right;
+}
+
+:houver.conteudo {
+	background: black;
+}
