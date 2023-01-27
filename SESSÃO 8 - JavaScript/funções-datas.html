@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        //dia
+        var data = new Date()
+        document.write(data.getDate() + '<br/>')
+        //mês de 0 a 11
+        document.write(data.getMonth() + 1 + '<br/>')
+        //ano
+        document.write(data.getFullYear())
+        */
+
+        //metodos get recuperam valores e metodos set setam valores
+
+        //adicionar / remover dias
+        var data = new Date()
+        document.write('<h3>Adcionar & Remover Dias</h3>')
+        document.write(data.toString())
+        data.setDate(data.getDate() + 52)
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<hr />')
+        //adcionar / remover meses
+        document.write('<h3>Adcionar & Remover Meses</h3>')
+        document.write(data.toString())
+        data.setMonth(data.getMonth() + 1)
+        document.write('<hr />')
+        document.write(data.toString())
+        document.write('<hr />')
+        //adcionar / remover anos
+        document.write('<h3>Adcionar & Remover Anos</h3>')
+        document.write(data.toString())
+        data.setFullYear(data.getFullYear() + 1)
+        document.write('<hr />')
+        document.write(data.toString())
+
+        document.write('<hr />')
+        
+        //calculando dias entre determinanas datas
+        document.write('<h3>ex</h3>')
+        // 15/01/2017
+        var data1 = new Date(2017, 0, 15)
+        // 23/02/2017
+        var data2 = new Date(2017, 1, 23)
+        document.write(data1.toString())
+        document.write('<hr />')
+        document.write(data2.toString() + '<br/>')
+        //converter dadas em algo que pode ser calculado
+        document.write('<hr />')
+        document.write(data1.getTime())
+        document.write(data2.getTime() + '<br/>')
+        // encontrar a quantidade de milisegundos entre data1 e data2
+        var milisegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+        document.write(milisegundos_entre_datas)
+        var milisegundos_por_dia = (1*24*60*60*1000)
+        document.write('1 dia tem: ' + milisegundos_por_dia + ' milisegundos')
+        document.write('<br /> <hr />')
+        document.write( milisegundos_entre_datas / milisegundos_por_dia)
+
+
+    </script>
+</body>
+</html>
